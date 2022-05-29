@@ -319,7 +319,7 @@ const Nav = () => {
 
 
 {/* -flex- */}
-<div className=" gap-14  font-semibold text-xl self-center  ml-20 flex  mt-[20px]">
+<div className=" lg:gap-14 md:gap-3 sm:gap-0  font-semibold text-xl self-center  ml-20 flex  mt-[20px]">
 
 
 {/* ----pricing- */}
