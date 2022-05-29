@@ -1,18 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
-
-  import {
-    Menu,
-    MenuItem,
-    MenuButton
-} from '@szhsin/react-menu';
-import '@szhsin/react-menu/dist/index.css';
-
+import { Menu, MenuItem, MenuButton } from "@szhsin/react-menu";
+import "@szhsin/react-menu/dist/index.css";
 
 const logoimage =
   "https://api-seomaster.giraffly.com/commonPublic/shopify_1645508812621478ccee44c4923.jpg";
-
 
 const Nav = () => {
   const [tog1, settog1] = useState(false);
@@ -256,48 +249,27 @@ const Nav = () => {
 
                   <li>sell</li>
                   <li>
-                      
-
-            <div>
-                
-              
-
-
-                <Menu
-         
-                offsetY={66}
-                offsetX={-10}
-         
-                
-                menuButton={<MenuButton>
-
-<h1 className=" font-bold">
-    Market
-</h1>
-
-                </MenuButton>}>
-
                     <div>
-                        <header className=" font-semibold pb-4 border-b-black border-b-2 mb-4">
+                      <Menu
+                        offsetY={66}
+                        offsetX={-10}
+                        menuButton={
+                          <MenuButton>
+                            <h1 className=" font-bold">Market</h1>
+                          </MenuButton>
+                        }
+                      >
+                        <div>
+                          <header className=" font-semibold pb-4 border-b-black border-b-2 mb-4">
                             MARKET YOUR BUISNESS
-                        </header>
+                          </header>
+                        </div>
+                        <MenuItem>New File</MenuItem>
+                        <MenuItem>Save</MenuItem>
+                        <MenuItem>Close Window</MenuItem>
+                      </Menu>
                     </div>
-            <MenuItem>New File</MenuItem>
-            <MenuItem>Save</MenuItem>
-            <MenuItem>Close Window</MenuItem>
-        </Menu>
-
-
-                </div>          
-                      
-                      
-                      
-    
-    
-    
-    
-    
-    </li>
+                  </li>
                   <li>manage</li>
                 </ul>
               </div>
@@ -308,103 +280,61 @@ const Nav = () => {
         {/* -----rightside---- */}
 
         <div className="  col-span-6">
+          <div className=" container">
+            {/* -----content- */}
+            <div className=" list-cont">
+              {/* -flex- */}
+              <div className=" lg:gap-14 md:gap-3 sm:gap-0  font-semibold text-xl self-center  ml-20 flex  mt-[20px]">
+                {/* ----pricing- */}
 
+                <div>
+                  <p>pricing</p>
+                </div>
 
+                {/* -learn- */}
 
-<div className=" container">
+                <div>
+                  <div>
+                    <Menu
+                      offsetY={66}
+                      offsetX={-10}
+                      menuButton={
+                        <MenuButton>
+                          <h1 className=" font-bold">
+                            Learn{" "}
+                            <span>
+                              {" "}
+                              <i class="fa-solid fa-chevron-down"></i>{" "}
+                            </span>
+                          </h1>
+                        </MenuButton>
+                      }
+                    >
+                      <MenuItem>blog</MenuItem>
+                      <MenuItem>buisness courses</MenuItem>
+                      <MenuItem>guides</MenuItem>
+                      <MenuItem>shopify community</MenuItem>
+                      <MenuItem> free tools</MenuItem>
+                      <MenuItem>prodcasts</MenuItem>
+                      <MenuItem>community events</MenuItem>
+                    </Menu>
+                  </div>
+                </div>
 
+                <div>Login</div>
 
-{/* -----content- */}
-<div className=" list-cont">
+                <div>
+                  <p>
+                    <button className="p-[5px]  text-white font-bold w-[166px]  hover:bg-black  bg-[#008060]">
+                      free trial
+                    </button>
+                  </p>
+                </div>
+              </div>
 
-
-{/* -flex- */}
-<div className=" lg:gap-14 md:gap-3 sm:gap-0  font-semibold text-xl self-center  ml-20 flex  mt-[20px]">
-
-
-{/* ----pricing- */}
-
-<div>
-
-  <p>pricing</p>
-</div>
-
-
-
-{/* -learn- */}
-
-
-<div>
-
- 
-<div>
-<Menu
-         
-         offsetY={66}
-         offsetX={-10}
-  
-         
-         menuButton={<MenuButton>
-
-<h1 className=" font-bold">
-  Learn <span> <i class="fa-solid fa-chevron-down"></i> </span>
-</h1>
-
-         </MenuButton>}>
-
-     <MenuItem>blog</MenuItem>
-     <MenuItem>buisness courses</MenuItem>
-     <MenuItem>guides</MenuItem>
-     <MenuItem>shopify community</MenuItem>
-     <MenuItem> free tools</MenuItem>
-     <MenuItem>prodcasts</MenuItem>
-     <MenuItem>community events</MenuItem>
- </Menu>
-
-</div>
-
-
-</div>
-
-
-<div>
-
-  Login
-</div>
-
-
-
-<div>
-
-  <p>
-    <button
-    className ='p-[5px]  text-white font-bold w-[166px]  hover:bg-black  bg-[#008060]'
-    
-    >free trial</button>
-  </p>
-</div>
-
-
-
-
-</div>
-
-{/* ----flex end- */}
-
-
-
-
-
-
-
-</div>
-
-
-
-
-</div>
-
-
+              {/* ----flex end- */}
+            </div>
+          </div>
         </div>
       </div>
     </div>
