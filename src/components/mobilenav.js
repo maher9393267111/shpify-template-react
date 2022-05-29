@@ -2,6 +2,10 @@ import React from 'react';
 
 import {useState, useEffect} from 'react';
 import { Button, Drawer, Space } from 'antd';
+
+import { Collapse } from 'antd';
+const { Panel } = Collapse;
+
 const logoimage =
   "https://api-seomaster.giraffly.com/commonPublic/shopify_1645508812621478ccee44c4923.jpg";
 
@@ -21,6 +25,12 @@ const Mobilenav = () => {
     const onClose = () => {
       setVisible(false);
     };
+
+
+
+    const onChange = (key) => {
+        console.log(key);
+      };
 
 
 
@@ -70,7 +80,13 @@ className=' text-bold text-xl'
 <div
 className=' text-3xl'
 >
-<i className='   text-3xl' class="fa-solid fa-bars"></i>
+<i
+onClick={showLargeDrawer}
+
+className=' 
+
+
+text-3xl' class="fa-solid fa-bars"></i>
 </div>
 
 
@@ -96,15 +112,13 @@ className=' text-3xl'
     <>
       <Space>
        
-        <Button type="primary" onClick={showLargeDrawer}>
-          Open Large Size (736px)
-        </Button>
+       
       </Space>
       <Drawer
-        title={`${size} Drawer`}
+        title={`  Shopify`}
         placement="right"
         width={window.innerWidth}
-        bodyStyle={{ transition: 'all 0.7s' }}
+        bodyStyle={{ transition: 'all 0.7s',marginTop:'2px' }}
         onClose={onClose}
         visible={visible}
         extra={
@@ -116,9 +130,353 @@ className=' text-3xl'
           </Space>
         }
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+     
+{/* -content- */}
+
+
+<div className=' ml-4'>
+
+<Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header=" Start" key="1">
+        
+<div>
+
+<ul className=' text-xl '>
+
+<li className='  mb-2'>
+    Start your buisness
+</li>
+
+
+
+<li  className='  mb-2'>
+    
+<Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header=" Branding" key="1">
+
+
+<div>
+    
+<p className=' text-[17px] text-[#687771]'>
+Look professional and help customers connect with your business
+</p>
+
+
+
+<ul>
+
+<li className=' mb-2'>
+ buisness name generator
+</li>
+
+
+<li>
+
+
+Logo Maker
+</li>
+
+
+
+
+
+</ul>
+
+
+</div>
+
+
+ </Panel>
+      
+    </Collapse>
+
+
+
+</li>
+
+
+<li className='  mb-2'>
+
+
+
+    <Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header="     online presence" key="1">
+
+
+<div>
+    
+<p className=' text-[17px] text-[#687771]'>
+Find a domain, explore stock images, and amplify your brand
+</p>
+
+
+
+<ul>
+
+<li className=' mb-2'>
+Domain name
+</li>
+
+
+<li>
+
+
+Stock photography
+</li>
+
+
+
+
+
+</ul>
+
+
+</div>
+
+
+ </Panel>
+      
+    </Collapse>
+
+
+
+
+</li>
+
+
+<li className='  mb-2'>
+
+    store set up
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+      </Panel>
+      
+    </Collapse>
+
+
+
+
+
+{/* -collapse 2 sell- */}
+
+
+<div>
+
+<Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header=" Sell" key="1">
+
+
+<div>
+
+
+
+<ul>
+
+<li>
+    <p>sell anywhere</p>
+</li>
+
+<li>
+   
+<Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header="Online store" key="1">
+
+
+<div>
+    
+<p className=' text-[17px] text-[#687771]'>
+Look professional and help customers connect with your business
+</p>
+
+
+
+<ul className='ul-li'>
+
+<li className=' mb-2'>
+Overview
+</li>
+
+
+<li>
+
+
+Features
+</li>
+
+
+<li>
+    Examples
+</li>
+
+
+<li>
+    Themes
+</li>
+
+
+
+</ul>
+
+
+</div>
+
+
+ </Panel>
+      
+    </Collapse>
+
+
+
+
+
+</li>
+
+{/* --------- */}
+
+
+<li>
+    
+<Collapse
+
+bordered={false}
+
+defaultActiveKey={['1']} onChange={onChange}>
+      <Panel 
+      
+      className='font-bold text-2xl  '
+      header="POINT OF SALE" key="1">
+
+
+<div>
+    
+<p className=' text-[17px] text-[#687771]'>
+Sell at retail locations, pop-ups, and beyond
+</p>
+
+
+
+<ul className='ul-li'>
+
+<li className=' mb-2'>
+Overview
+</li>
+
+
+<li>
+
+
+Hardware
+</li>
+
+
+<li>
+    Features
+</li>
+
+
+<li>
+    Themes
+</li>
+
+
+<li>
+    Pricing
+</li>
+
+</ul>
+
+
+</div>
+
+
+ </Panel>
+      
+    </Collapse>
+
+
+</li>
+<li>
+    <p>sell anywhere</p>
+</li>
+<li>
+    <p>sell anywhere</p>
+</li>
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+ </Panel>
+      
+    </Collapse>
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
       </Drawer>
     </>
 

@@ -40,3 +40,9 @@ code {
   top: 100px;
 }
 
+
+ .ul-li > li {
+
+
+  @apply mb-4
+ }
