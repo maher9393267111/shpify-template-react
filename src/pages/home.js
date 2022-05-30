@@ -6,6 +6,10 @@ import Mobilenav from "../components/mobilenav";
 import Mainsection from "../components/mainsection";
 import Section2 from "../components/section2";
 import Section3 from "../components/section3";
+import Section4 from "../components/section4";
+import Section5 from "../components/section5";
+import Section6 from "../components/section6";
+import Footer from "../components/footer";
 
 const Home = () => {
   const [currentnav, setcurrentnav] = useState(<Nav />);
@@ -64,6 +68,29 @@ const Home = () => {
  <Section3/>
 </div>
 
+
+<div>
+
+  <Section4/>
+</div>
+
+<div>
+  <Section5/>
+</div>
+
+
+<div>
+
+<Section6/>
+
+</div>
+
+
+<div>
+
+
+  <Footer/>
+</div>
 
 
 

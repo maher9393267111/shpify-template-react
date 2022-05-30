@@ -46,3 +46,28 @@ code {
 
   @apply mb-4
  }
+
+
+
+ .main > h3{
+
+@apply mb-4 xs:text-[16px] lg:text-[19px] font-bold
+
+
+ }
+
+ .main > div > p{
+
+@apply w-[77%]
+
+
+ }
+
+
+
+ .ch > h4 {
+
+@apply font-bold text-green-800
+
+
+ }
